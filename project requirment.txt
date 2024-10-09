@@ -1,0 +1,12 @@
+besoin fonctionnel :
+POST SERVICE : display posts based on react number, date
+Messaging Service : typing indicators, read receipts and offline mesage queuing
+Besoins technique :
+-redis cache
+-limit rater
+-delete cascade between services
+
+objectifs :
+semaine du 09/09: 
+- test services : post, comment and react
+-implementation gateway service + understand proxy middleware

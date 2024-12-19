@@ -8,7 +8,7 @@ a) API Gateway:
 * Handles routing to microservices
 * Implements rate limiting, caching, and authentication
 b) Microservices: Each service has its own Express.js app and Prisma schema
-* Auth Service: Handles authentication and authorization
+* Auth Service: Handles authentication and authorization using aouth authentification
 * User Service: Manages user profiles and settings
 * Post Service: Handles posts, comments, and reactions
 * Connection Service: Manages professional connections
@@ -17,21 +17,11 @@ c) Shared: Common utilities, middleware, and types used across services
 1. Detailed Setup:
 a) Gateway:
 
-
-Copy
-Copy
 gateway/ ├── src/ │ ├── routes/ │ ├── middleware/ │ └── server.ts ├── package.json └── tsconfig.json
 b) Microservice (e.g., User Service):
-
-
-Copy
-Copy
 services/user-service/ ├── src/ │ ├── controllers/ │ ├── routes/ │ ├── services/ │ ├── models/ │ └── server.ts ├── prisma/ │ └── schema.prisma ├── package.json └── tsconfig.json
 c) Shared:
 
-
-Copy
-Copy
 shared/ ├── src/ │ ├── middleware/ │ ├── utils/ │ └── types/ ├── package.json └── tsconfig.json
 1. Key Considerations:
 a) Database:
